@@ -10,8 +10,7 @@ route.get('/', (req, res) => {
 route.post('/login', (req, res) => {
   const userInfo = req.body
   const user = verifyUsersData(userInfo)
-  console.log(user)
-  res.redirect('/')
+  res.redirect(`/user/${user.firstName}`)
 })
 
 module.exports = route
