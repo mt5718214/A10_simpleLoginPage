@@ -10,5 +10,8 @@
       <input type="text" placeholder="Password" name="password">
     </label>
   </div>
+  {{#if fail}}
+  <div><strong>Username 或Password 錯誤</strong></div>
+  {{/if}}
   <button type="submit">Sign in</button>
 </form>
