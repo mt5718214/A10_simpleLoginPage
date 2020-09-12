@@ -1,6 +1,6 @@
-<form action="/login" method="POST">
+<form action="/login" method="POST" style="max-width: 420px; margin: auto; padding: 20px 10px; border: 2px solid #aaa;">
   <h2>Account Login</h2>
-  <div>
+  <div class="mt-3">
     <label for="">
       <input type="text" placeholder="Email" name="email">
     </label>
@@ -11,7 +11,9 @@
     </label>
   </div>
   {{#if fail}}
-  <div><strong>Username 或Password 錯誤</strong></div>
+  <div class="alert alert-danger" role="alert" style="max-width: 540px; margin: 0 auto 16px;">
+    Username 或Password 錯誤
+  </div>
   {{/if}}
-  <button type="submit">Sign in</button>
+  <button class="btn btn-info" type="submit">Sign in</button>
 </form>
