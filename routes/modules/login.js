@@ -6,7 +6,8 @@ route.get('/', (req, res) => {
 })
 
 route.post('/login', (req, res) => {
-
+  const userInfo = req.body
+  console.log(userInfo)
   res.redirect('/')
 })
 
