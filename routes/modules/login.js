@@ -13,6 +13,7 @@ route.post('/login', (req, res) => {
   const userInfo = req.body
   const user = verifyUsersData(userInfo)
   if (user) {
+    fail = false
     res.redirect(`/user/${user.firstName}`)
   } else {
     fail = true
